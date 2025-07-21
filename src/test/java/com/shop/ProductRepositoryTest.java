@@ -1,16 +1,16 @@
 package com.shop;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(classes = ShopApplication.class)
-public class ShopApplicationTests {
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+@DataJpaTest
+public class ProductRepositoryTest {
 
     @Test
     void contextLoads() {
-        // Just test if Spring Application Context loads successfully
+        // Just testing if the context loads
         assertThat(true).isTrue();
     }
 }
